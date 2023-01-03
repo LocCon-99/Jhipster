@@ -20,27 +20,27 @@ const apiSearch='api/search'
 
 // Actions
 
-const myHeaders = new Headers();
-myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiYXV0aCI6IlJPTEVfVVNFUiIsImV4cCI6MTY3MjM4NTI0M30.-fU2i36KO-SsbeBxvacUayUeqU44ZoVCy6SmfGxboLIxMneUfqiEA5-rNvyqch1nehi1JaafWFBmVBWtGE131A");
-myHeaders.append("Content-Type", "application/json");
-
-const raw = JSON.stringify({
-  "name": null,
-  "age": null
-});
-
-let requestOptions = {
-  method: 'POST',
-  headers: myHeaders,
-  body: raw,
-  redirect: 'follow'
-};
-
-function handleClick() {
-  // @ts-ignore
-  fetch('http://------------:8080/',requestOptions)
-
-}
+// const myHeaders = new Headers();
+// myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiYXV0aCI6IlJPTEVfVVNFUiIsImV4cCI6MTY3MjM4NTI0M30.-fU2i36KO-SsbeBxvacUayUeqU44ZoVCy6SmfGxboLIxMneUfqiEA5-rNvyqch1nehi1JaafWFBmVBWtGE131A");
+// myHeaders.append("Content-Type", "application/json");
+//
+// const raw = JSON.stringify({
+//   "name": null,
+//   "age": null
+// });
+//
+// let requestOptions = {
+//   method: 'POST',
+//   headers: myHeaders,
+//   body: raw,
+//   redirect: 'follow'
+// };
+//
+// function handleClick() {
+//   // @ts-ignore
+//   fetch('http://------------:8080/',requestOptions)
+//
+// }
 
 export const getEntities = createAsyncThunk('student/fetch_entity_list', async ({ page, size, sort }: IQueryParams) => {
   const requestUrl = `${apiUrl}${sort ? `?page=${page}&size=${size}&sort=${sort}&` : '?'}cacheBuster=${new Date().getTime()}`;
