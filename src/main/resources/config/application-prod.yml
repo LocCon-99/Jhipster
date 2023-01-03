@@ -33,7 +33,7 @@ spring:
       enabled: false
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:mariadb://localhost:3307/test?useLegacyDatetimeCode=false&serverTimezone=UTC
+    url: jdbc:mariadb://192.168.3.47:3307/test?useLegacyDatetimeCode=false&serverTimezone=UTC
     username: root
     password: 123456
     hikari:
