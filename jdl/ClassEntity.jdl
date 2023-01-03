@@ -1,0 +1,6 @@
+entity ClassEntity{
+    classId Integer,
+    name String
+}
+
+paginate * with pagination

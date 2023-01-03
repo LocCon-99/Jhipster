@@ -1,0 +1,24 @@
+{
+  "applications": "*",
+  "changelogDate": "20221229025558",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "class_entity",
+  "fields": [
+    {
+      "fieldName": "classId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "ClassEntity",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

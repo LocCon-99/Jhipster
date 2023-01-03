@@ -1,0 +1,8 @@
+entity Student{
+    studentId Integer,
+    name String,
+    age Integer,
+    classNam String,
+    address String
+}
+paginate * with pagination
